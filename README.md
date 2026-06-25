@@ -1,2 +1,2 @@
 # INNOVATECH
-MY ENTERPRISE 
+Official website and digital services platform for INNOVATECH
