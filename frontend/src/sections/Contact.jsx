@@ -21,6 +21,9 @@ const handleSubmit = async (e) => {
 
   console.log("SUBMIT BUTTON CLICKED");
 
+  console.log("Using backend:", "https://innovatech-backend-p2gv.onrender.com/api/contact/");
+alert("Submitting to Render backend");
+
   try {
     const response = await axios.post(
       "https://innovatech-backend-p2gv.onrender.com/api/contact/",
