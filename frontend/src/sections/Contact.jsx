@@ -23,7 +23,7 @@ const handleSubmit = async (e) => {
 
   try {
     const response = await axios.post(
-      "https://your-render-service.onrender.com/api/contact/",
+      "https://innovatech-backend-p2gv.onrender.com/api/contact/",
       form
     );
 
