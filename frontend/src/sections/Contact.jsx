@@ -42,10 +42,19 @@ alert("Submitting to Render backend");
     });
 
   } catch (error) {
-    console.error(error);
-    alert("Error sending message");
+  console.error(error);
+
+  if (error.response) {
+    alert(
+      `Status: ${error.response.status}\n` +
+      JSON.stringify(error.response.data)
+    );
+  } else if (error.request) {
+    alert("No response received from the server.");
+  } else {
+    alert(error.message);
   }
-};
+}
 
   return (
     <section id="contact" className="py-32 px-6 bg-[#071427]">
@@ -178,4 +187,5 @@ alert("Submitting to Render backend");
 
     </section>
   );
+}
 }

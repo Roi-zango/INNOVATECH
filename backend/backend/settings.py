@@ -29,7 +29,7 @@ load_dotenv(BASE_DIR.parent / ".env")
 SECRET_KEY = 'django-insecure-e63eetea@xm!f%p#+p=b3ov=gw)mw=)g8=mqsx(y6fd6cp4^+z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     "innovatech-backend-p2gv.onrender.com",
