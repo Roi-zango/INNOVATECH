@@ -133,7 +133,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
-CORS_ALLOWED_ORIGINS = "https://innovatech-swart.vercel.app"
+CORS_ALLOWED_ORIGINS = [
+    "https://innovatech-swart.vercel.app"
+]
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 EMAIL_HOST = 'smtp.gmail.com'
